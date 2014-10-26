@@ -1,4 +1,4 @@
-pictureBright
-=============
+rails_simple_user_auth
+======================
 
-Image storing and enhancement web service
+Repository accompanying User/Password Authenticaion from Scratch article (http://rubysource.com/?p=3611)
