@@ -1,0 +1,2 @@
+module BoxfileHelper
+end
