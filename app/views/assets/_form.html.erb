@@ -1,0 +1,13 @@
+<%= form_for @asset, :html => {:multipart => true} do |f| %>
+  <% @asset.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+  <% end %>
+  <div class = "uploadsection">
+    <p>
+      <%= f.label :uploaded_file, "Select an image to upload:", :class => "typography1"%><br />
+      <%= f.file_field :uploaded_file, :class => "NewImageField" %>
+    </p>
+  <p><%= f.submit "Upload", :class => "upNewImageButton" %></p>
+  </div>
+<% end %>
+

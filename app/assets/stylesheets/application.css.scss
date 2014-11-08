@@ -1,0 +1,267 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body, html, main {
+	background-color:#ebebeb;
+}
+
+.navbar{
+	background-color: #26283b;
+}
+
+h1 {
+	color: #16b1b5;
+	font-family: "Amatic SC", sans-serif;
+	font-size: 75px; 
+}
+
+.newupload {
+	text-align: center;
+	padding-top: 75px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.newupload h1 {
+	color: #fff;
+	font-size: 85px;
+}
+
+.uploadsection{
+	color: #fff;
+	text-align: center;
+	background-color: #16b1b5;
+	padding: 25px;
+	border-radius: 25px;
+}
+
+.button_right {
+	background-color: #26283b;
+	color: #16b1b5;	
+	border-radius: 5px;
+	border: 0;
+	padding: 7px;	
+	text-align: center;
+	width: 100%;
+	font-family: "Oswald", sans-serif;
+}
+
+.button_right:hover, .regbutton1:hover {
+	background-color: #474a65;
+}
+
+.HPloggedin{
+	text-align: center;
+	 width: 50%;
+    	margin: 0 auto;
+    	padding-top: 100px;
+}
+
+.upNewImageButton{
+	background-color: #26283b;
+	color: #16b1b5;	
+	border-radius: 5px;
+	border: 0;
+	padding: 15px;	
+	text-align: center;
+	font-family: "Amatic SC", sans-serif;
+	font-size: 40px;
+	margin-top: 50px;
+}
+
+.upNewImageButton2{
+	background-color: #26283b;
+	color: #16b1b5;	
+	border-radius: 5px;
+	border: 0;
+	padding:7px;	
+	text-align: center;
+	font-family: "Amatic SC", sans-serif;
+	font-size: 35px;
+}
+
+.upNewImageButton:hover{
+	background-color: #474a65;
+	color: #16b1b5;
+	text-decoration: none;
+}
+
+.NewImageField{
+	background-color: #fff;
+	color: #616270;	
+	border-radius: 5px;
+	border: 0;
+	padding: 3px;	
+	font-family: "Ubuntu", sans-serif;
+	font-size: 16px;
+	width: 100%;
+}
+
+.UpNewIm{
+	margin-top: 50px;
+}
+
+.HPloggedin h1{
+	font-family: "Oswald", sans-serif;
+	font-size: 35px;
+	margin-bottom: 25px;
+}
+
+.imageholder{
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+	margin-top: 2px;
+	padding: 3px;
+	font-family: "Oswald", sans-serif;
+	font-size: 16px;
+}
+
+.editButton{
+	background-color: #16b1b5;
+	color: #fff;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+.editButton:hover{
+	background-color: #474a65;
+	color: #fff;
+	text-decoration: none;
+}
+
+.EdDelButtons{
+	text-align: right;
+	font-size: 12px;
+}
+
+.typography{
+	font-family: "Oswald", sans-serif;
+	color: #fff;
+}
+
+.typography:hover{
+	text-decoration: none;
+}
+
+.typography1{
+	font-family: "Amatic SC", sans-serif;
+	font-size: 24px;
+}
+
+.registrationHolder, .registrationHolder1{
+	margin-top: -25px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.regbutton1 {
+	background-color: #26283b;
+	color: #16b1b5;	
+	border-radius: 5px;
+	border: 0;
+	padding: 7px;	
+	text-align: center;
+	width: 100%;
+	font-family: "Oswald", sans-serif;
+	margin-top: 40px;
+}
+
+.registrationHolder1 h3, .registrationHolder h3{
+	font-family: "Oswald", sans-serif;
+	font-size: 30px;
+}
+
+.homepageHeaders h1{
+	font-family: "Oswald", sans-serif;
+	font-size: 65px;
+	color: #16b1b5;
+	margin: auto;
+	color: 16b1b5;
+	text-align: center;
+}
+
+.homepageHeaders h2 {
+	font-family: "Amatic SC", sans-serif;
+	font-size: 44px;
+	color: #16b1b5;
+	margin: auto;
+	text-align: center;
+}
+
+.homepageHeaders {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.navlinkstyles{
+	float: right;
+}
+
+.navlinkstyles a{
+	font-family: "Oswald", sans-serif;
+}
+
+::selection {
+        background: #26283b; /* Safari */
+        color: #FFF;
+}
+::-moz-selection {
+        background: #26283b; /* Firefox */
+        color: #FFF;
+}   
+
+.ClearEdit{clear:both}
+
+#ContentEdit{
+	width:600px;
+	padding:20px 0;
+	margin:10px auto;
+}
+
+#Filters .Filter{float:left;width:300px}
+
+#Filters .Filter>div{padding:5px 10px}
+
+#Filters .Filter .FilterName{float:left;}
+#Filters .Filter .FilterName p{margin:0}
+
+#Filters .Filter .FilterSetting{float:right}
+
+#Filters .Filter .FilterSetting input[type="range"]{-webkit-appearance:none!important;width:150px;background-color:#434341;height:1px;
+vertical-align:1px}
+
+#Filters .Filter .FilterSetting input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none!important;height:12px;width:15px;background-color:#368ad2;
+cursor:pointer}
+#Filters .Filter .FilterSetting .FilterValue{width:30px;display:inline-block}
+
+#Filters p{line-height:24px; color:#343431;}
+
+#Filters {
+	font-family: "Oswald", sans-serif;
+	margin-top: 25px;
+}
+
+.editH1{
+	margin-top: 50px;
+}
+
+.editH1 h1{
+	text-align: center;
+}

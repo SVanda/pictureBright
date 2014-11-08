@@ -1,0 +1,28 @@
+<body data-no-turbolink>
+<div class = "HPloggedin">
+
+<% if current_user.avatar? %>	
+  	<%= image_tag(current_user.avatar.url(:medium))%>
+<% end %>
+ 
+    <h1><%= current_user.email %>'s Images</h1>
+    
+<% for asset in @assets %>
+<div class = "imageholder">   
+ 	<%= link_to asset.uploaded_file_file_name, asset.uploaded_file.url %>  
+ 	
+ <div class = "EdDelButtons">
+	<%= link_to "Edit", edit_asset_path(asset), :class => "editButton"%>
+	<%= link_to "Delete", asset, :confirm => 'Are you sure?', :method => :delete, :class => "editButton" %><br>
+</div>
+</div>
+<% end %>
+
+<div class = "UpNewIm">
+	<p><%= link_to "Upload New Image", new_asset_path, :class => "upNewImageButton2" %></p>
+</div>
+
+</div>
+</body>
+
+
