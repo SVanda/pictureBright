@@ -13,7 +13,7 @@ body,html,main{
 <tr>
 <td>
 <div class = "registrationHolder1">
-<div class="authform">
+<div class="authform" id="signinform">
   <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :role => 'form'}) do |f| %>
     <h3>Sign in</h3>
     <%= devise_error_messages! %>
@@ -41,7 +41,7 @@ body,html,main{
   </td>
   <td>
   <div class = "registrationHolder">
-  <div class="authform">
+  <div class="authform" id="regform">
   <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :role => 'form'}) do |f| %>
     <h3>Sign up</h3>
     <%= devise_error_messages! %>

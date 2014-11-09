@@ -1,6 +1,8 @@
 <head>
 	<script type="text/javascript">
 	Caman.DEBUG = true
+	var dataURL = this.toBase64();
+	$('#base64').val(dataURL)
 	</script>
 </head>
 
@@ -17,6 +19,7 @@ id="example"
 src="<%= @asset.uploaded_file.url %>"
 data-caman-hidpi="<%= @asset.uploaded_file.url %>"
 >
+<input id="base64" type="hidden" value="" name="base64"/>
 
 <div id="ContentEdit">
 
@@ -141,6 +144,8 @@ data-caman-hidpi="<%= @asset.uploaded_file.url %>"
 	</div>
 	</div>
 <div class="Clear"></div>
+</div>
+	<div id="createPNGButton">
 </div>
 </div>
 
