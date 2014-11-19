@@ -5,7 +5,8 @@
   	<%= image_tag(current_user.avatar.url(:medium))%>
 <% end %>
  
-    <h1><%= current_user.email %>'s Images</h1>
+    <h1><%= current_user.name %>'s Images</h1>
+    <h1><%= current_user.email %></h1>
     
 <% for asset in @assets %>
 <div class = "imageholder">   
