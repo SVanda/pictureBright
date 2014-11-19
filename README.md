@@ -51,6 +51,9 @@ Running Unit Tests:
 	- cd coverage/
 	- open index.html
 
+Running Functional Tests: (using Selenium IDE and Rspec)
+-rspec spec/functional_tests/* (this should run all the functional tests that cover the requirements)
+
 Bug Fixes:
 1) If avatar uploades but does not display, try changing line
 - before_filter :configure_permitted_parameters, if: :devise_controller?
