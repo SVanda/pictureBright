@@ -24,7 +24,7 @@ describe "UnsuccessfulFileupload" do
     @driver.find_element(:name, "commit").click
     @driver.find_element(:link, "Upload New Image").click
     #@driver.find_element(:id, "asset_uploaded_file").clear
-    @driver.find_element(:id, "asset_uploaded_file").send_keys "/Users/Sydney/Pictures/grandma_lucy_80th.pdf"
+    @driver.find_element(:id, "asset_uploaded_file").send_keys "/Users/Sydney/Documents/IntroToSoftwareEngineering/pictureBright/README.md"
     @driver.find_element(:name, "commit").click
     @driver.find_element(:link, "Sign out").click
   end

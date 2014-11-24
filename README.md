@@ -52,7 +52,10 @@ Running Unit Tests:
 	- open index.html
 
 Running Functional Tests: (using Selenium IDE and Rspec)
--rspec spec/functional_tests/* (this should run all the functional tests that cover the requirements)
+- cd spec/functional_tests 
+- edit line 27 in the files 05successful_uploadAvatar.rb, 06unsuccessful_uploadAvatar.rb, 07successful_fileupload.rb, and 08unsuccessful_fileupload.rb
+- update local path to test pictures (ie panda_cubs.jpg, Avatar_example.png, and README.md in the top layer of the repository)
+- rspec spec/functional_tests/* (this should run all the functional tests that cover the requirements)
 
 Bug Fixes:
 1) If avatar uploades but does not display, try changing line

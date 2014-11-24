@@ -24,7 +24,7 @@ describe "SuccessfulUploadAvatar" do
     @driver.find_element(:name, "commit").click
     @driver.find_element(:link, "Edit Account").click
     #@driver.find_element(:id, "user_avatar").clear
-    @driver.find_element(:id, "user_avatar").send_keys "/Users/Sydney/Pictures/panda_cubs.jpg"
+    @driver.find_element(:id, "user_avatar").send_keys "/Users/Sydney/Documents/IntroToSoftwareEngineering/pictureBright/Avatar_example.png"
     @driver.find_element(:id, "user_current_password").clear
     @driver.find_element(:id, "user_current_password").send_keys "testpassword"
     @driver.find_element(:name, "commit").click

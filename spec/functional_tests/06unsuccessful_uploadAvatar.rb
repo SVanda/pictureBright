@@ -24,7 +24,7 @@ describe "UnsuccessfulUploadAvatar" do
     @driver.find_element(:name, "commit").click
     @driver.find_element(:link, "Edit Account").click
     #@driver.find_element(:id, "user_avatar").clear
-    @driver.find_element(:id, "user_avatar").send_keys "/Users/Sydney/Pictures/grandma_lucy_80th.pdf"
+    @driver.find_element(:id, "user_avatar").send_keys "/Users/Sydney/Documents/IntroToSoftwareEngineering/pictureBright/README.md"
     @driver.find_element(:id, "user_current_password").clear
     @driver.find_element(:id, "user_current_password").send_keys "testpassword"
     @driver.find_element(:name, "commit").click

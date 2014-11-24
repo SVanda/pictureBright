@@ -24,7 +24,7 @@ describe "SuccessfulFileupload" do
     @driver.find_element(:name, "commit").click
     @driver.find_element(:link, "Upload New Image").click
     #@driver.find_element(:id, "asset_uploaded_file").clear
-    @driver.find_element(:id, "asset_uploaded_file").send_keys "/Users/Sydney/Pictures/panda_cubs.jpg"
+    @driver.find_element(:id, "asset_uploaded_file").send_keys "/Users/Sydney/Documents/IntroToSoftwareEngineering/pictureBright/panda_cubs.jpg" 
     @driver.find_element(:name, "commit").click
     @driver.find_element(:link, "Sign out").click
   end
