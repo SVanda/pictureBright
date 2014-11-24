@@ -15,7 +15,7 @@ gem 'devise'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem "nifty-generators", :group => :development
 #gem "aws-s3"
-#gem 'aws-sdk'
+gem 'aws-sdk'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
