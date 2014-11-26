@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.3'
+ruby '2.1.2'
 gem 'rails', '4.1.6'
 #gem 'rails', '3.2.5'
 gem 'sass-rails', '~> 4.0.3'
@@ -16,6 +16,7 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 gem "nifty-generators", :group => :development
 #gem "aws-s3"
 gem 'aws-sdk'
+gem 'aws-flow'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
