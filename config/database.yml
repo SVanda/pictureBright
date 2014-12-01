@@ -11,19 +11,7 @@ default: &default
 
 development:
   <<: *default
-  database: db/production.sqlite3
-  #adapter: postgresql
-  #encoding: utf8
-  #database: <%= ENV['RDS_DB_NAME'] %>
-  #username: <%= ENV['RDS_USERNAME'] %>
-  #password: <%= ENV['RDS_PASSWORD'] %>
-  #host: <%= ENV['RDS_HOSTNAME'] %>
-  #port: <%= ENV['RDS_PORT'] %>
-  #database: ebdb
-  #username: CSEadmin
-  #password: 360Tsai
-  #host: aaxfesxmuvu2uy.cbm4ufsr8rvq.us-west-1.rds.amazonaws.com
-  #port: 5432
+  database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -42,8 +30,3 @@ production:
   password: <%= ENV['RDS_PASSWORD'] %>
   host: <%= ENV['RDS_HOSTNAME'] %>
   port: <%= ENV['RDS_PORT'] %>
-  #database: ebdb
-  #username: CSEadmin
-  #password: 360Tsai
-  #host: aaxfesxmuvu2uy.cbm4ufsr8rvq.us-west-1.rds.amazonaws.com
-  #port: 5432
